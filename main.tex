@@ -1,0 +1,40 @@
+\documentclass{article}
+
+\input{preamble}
+
+\begin{document}
+	\input{titlepage}
+	
+	\doublespacing
+	
+	\input{letterofsubmittal}
+	
+	\newpage
+	\pagenumbering{roman}
+	\setcounter{page}{2}
+	\tableofcontents
+	
+	\newpage
+	
+	\input{executivesummary}
+	
+	\newpage
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+	\renewcommand*\thesection{\arabic{section}.0}
+	
+	\input{introduction}
+	
+	\input{analysis}
+	
+	\input{conclusions}
+	
+	\newpage
+	
+	\bibliographystyle{apacite}
+	
+	\bibliography{references}
+	
+	\addcontentsline{toc}{section}{References}
+	
+\end{document}
