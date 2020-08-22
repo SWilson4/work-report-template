@@ -1,40 +1,40 @@
 \documentclass{article}
 
-\input{preamble}
+\input{preamble.tex}
 
 \begin{document}
-    \input{titlepage}
 
-    \doublespacing
+\input{titlepage.tex}
 
-    \input{letterofsubmittal}
-    
-    \newpage
-    \pagenumbering{roman}
-    \setcounter{page}{2}
-    \tableofcontents
-    
-    \newpage
-    
-    \input{executivesummary}
-    
-    \newpage
-    \pagenumbering{arabic}
-    \setcounter{page}{1}
-    \renewcommand*\thesection{\arabic{section}.0}
-    
-    \input{introduction}
-    
-    \input{analysis}
-    
-    \input{conclusions}
-    
-    \newpage
-    
-    \bibliographystyle{apacite}
-    
-    \bibliography{references}
-    
-    \addcontentsline{toc}{section}{References}
-    
+\doublespacing
+
+\input{letterofsubmittal.tex}
+
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{2}
+\tableofcontents
+
+\newpage
+
+\input{executivesummary.tex}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\renewcommand*\thesection{\arabic{section}.0}
+
+\input{introduction.tex}
+
+\input{analysis.tex}
+
+\input{conclusions.tex}
+
+\input{recommendations.tex}
+
+\newpage
+\printbibliography
+
+\addcontentsline{toc}{section}{References}
+
 \end{document}

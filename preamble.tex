@@ -1,10 +1,28 @@
 \usepackage[margin=1in]{geometry}       % margins
-
 \usepackage{setspace}                   % for double spacing
 \usepackage{tocloft}
 \renewcommand*{\cftsecnumwidth}{2em}    % for indentation in table of contents
 \usepackage{parskip}                    % for vertical spacing in some places
-\usepackage[natbibapa]{apacite}         % for bibliography
 \usepackage[hidelinks]{hyperref}        % for links
+\usepackage[style=apa]{biblatex}
 
-\usepackage{lipsum}                     % for dummy text
+\addbibresource{references.bib}
+
+\usepackage{lipsum}                     % for dummy text in template
+
+% variables for inserting title, name, student number, etc
+\newcommand{\reporttitle}{Work Report Title}
+\newcommand{\employername}{Employer}
+\newcommand{\employerlocation}{City, Province}
+\newcommand{\studentname}{Your Name}
+\newcommand{\studentnumber}{12345678}
+\newcommand{\term}{1C}
+\newcommand{\academicprogram}{Academic Program}
+\newcommand{\reportdate}{\today}
+\newcommand{\supervisorname}{Your Supervisor}
+\newcommand{\team}{Team You Worked On}
+\newcommand{\nth}{Nth}
+
+% replace Feridun's signature with your own
+\usepackage{graphicx}
+\newcommand{\signature}{\includegraphics[width=10em]{Feridun_Hamdullahpur_signature.jpg}}
